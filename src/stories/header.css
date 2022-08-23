@@ -1,0 +1,48 @@
+header{
+background-color: #1b1f24;
+border-bottom: 7px solid #17b077;
+padding: 0px 10px;
+}
+
+.wrapper {
+  font-family: sans-serif;
+  color: #17b077;
+  font-size: 14px;
+  max-height: 44px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 13px 0 9px 13px;
+  display: inline-block;
+}
+
+button + button {
+  margin-left: 10px;
+}
+
+.user-info {
+  color: #fff;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.wrapper > div.callapi > a{
+  color: #fff;
+  width:50px;
+  font-weight: normal;
+  text-align:center;
+  display: inline-block;
+  padding: 15px 5px;
+  background:transparent;
+  text-decoration: none;
+}
+.wrapper > div.callapi > a:hover{
+  color: #fff;
+  background:#444;
+  font-size: 15px;
+}

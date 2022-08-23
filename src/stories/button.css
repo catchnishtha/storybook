@@ -1,0 +1,87 @@
+.storybook-button {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 3em;
+  cursor: default;
+  display: inline-block;
+  line-height: 1;
+  background-color: red;
+}
+
+.storybook-button:not(.storybook-button--disabled){
+  cursor: pointer;
+}
+.storybook-button--primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.storybook-button--secondary {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+.storybook-button--success {
+  color: #fff;
+  background-color: #009b60;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
+
+.storybook-button--secondary.storybook-button--header{
+  color: #fff;
+  border-color: #fff;
+}
+.storybook-button--small {
+  font-size: 12px;
+  padding: 6px 12px;
+}
+.storybook-button--medium {
+  font-size: 14px;
+  padding: 10px 16px;
+}
+.storybook-button--large {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+.storybook-button--primary.storybook-button--hover, .storybook-button--primary:hover,
+.storybook-button--primary.storybook-button--focus, .storybook-button--primary:focus {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+.storybook-button--primary.storybook-button--focus, .storybook-button--primary:focus {
+  box-shadow:0 0 0 0.2rem rgb(0 123 255 / 50%);
+}
+.storybook-button--secondary.storybook-button--hover, .storybook-button--secondary:hover,
+.storybook-button--secondary.storybook-button--focus, .storybook-button--secondary:focus{
+  color: #212529;
+  background-color: rgb(240, 241, 242);
+  border-color: #dae0e5;
+}
+.storybook-button--secondary.storybook-button--focus, .storybook-button--secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(189, 193, 195, 0.5);
+}
+.storybook-button--success.storybook-button--hover, .storybook-button--success:hover,
+.storybook-button--success.storybook-button--focus, .storybook-button--success:focus{
+  color: #fff;
+  background-color: #007c4d;
+  border-color: #007c4d;
+}
+.storybook-button--success.storybook-button--focus, .storybook-button--success:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,155, 96, 0.5);
+}
+
+.storybook-button--disabled {
+  opacity: .65;
+}
+.storybook-button--primary.storybook-button--disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+.storybook-button--secondary.storybook-button--disabled {
+  color: #333;
+  background-color: transparent;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+}
