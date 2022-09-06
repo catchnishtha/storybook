@@ -9,7 +9,8 @@
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build-storybook-docs": "build-storybook --docs"
+    "build-storybook-docs": "build-storybook --docs",
+    "chromatic": "npx chromatic --project-token=cc2626585a58"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -32,6 +33,7 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "babel-loader": "^8.2.5",
+    "chromatic": "^6.9.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
@@ -43,5 +45,7 @@
   "description": "## Project setup ``` npm install ```",
   "main": ".eslintrc.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "readme": "ERROR: No README data found!",
+  "_id": "poc-storybook@0.1.0"
 }
