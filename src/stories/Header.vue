@@ -4,7 +4,7 @@
       <div>
         <h1>Enterprise Fleet Management</h1>
       </div>
-      <div class="callapi" v-if="midsection === true">
+      <div class="callapi" v-if="user && midsection === true">
         <a href="#" @click.prevent="$emit('getOrders')"> Orders </a>
         <a href="#" @click.prevent="$emit('getOrdersHistory')"> History </a>
       </div>
@@ -39,7 +39,7 @@ export default {
 
   emits: ['login', 'logout', 'createAccount', 'getOrders', 'getOrdersHistory'],
   setup(props, { emit }) {
-    console.log('Header props =', props)
+    //console.log('Header props =', props)
   }
 };
 </script>

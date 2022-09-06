@@ -42,14 +42,13 @@ export default {
   emits: ['click'],
 
   setup(props, { emit }) {
-    console.log('Button props =', props);
     props = reactive(props);
     return {
       classes: computed(() => ({
         'storybook-button': true,
         [`storybook-button--${props.type || 'secondary'}`]: true,
         [`storybook-button--${props.size || 'medium'}`]: true,
-        [`storybook-button--${props.state}`]: props.state !== undefined,
+        [`storybook-button--${props.state}`]: props.state !== undefined && props.state!=='',
         'storybook-button--header': props.header,
       })),
       style: computed(() => ({

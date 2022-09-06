@@ -2,7 +2,7 @@ import MyButton from './Button.vue';
 
 // More on default export: https://storybook.js.org/docs/vue/writing-stories/introduction#default-export
 export default {
-  title: 'Example/Button',
+  title: 'EFM/Button',
   component: MyButton,
   // More on argTypes: https://storybook.js.org/docs/vue/api/argtypes
   argTypes: {
@@ -11,7 +11,15 @@ export default {
     size: {
       control: { type: 'select' },
       options: ['small', 'medium', 'large'],
+    }, 
+    state: {
+      control: {type:'select'},
+      options:['', 'hover', 'focus'],
     },
+    type: {
+      control: { type: 'select' },
+      options: ['primary', 'secondary', 'success'],
+    }, 
   },
 };
 
@@ -101,6 +109,7 @@ HeaderButton.args = {
   label: "Header",
   header: true,
 };
+HeaderButton.decorators= [() => ({ template: '<div style="background-color: #444;padding: 6px;"><story/></div>' })];
 
 export const HeaderButtonHover = Template.bind({});
 HeaderButtonHover.args = {

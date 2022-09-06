@@ -14,8 +14,8 @@
 }
 .storybook-button--primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #5789ff;
+  border-color: #5789ff;
 }
 .storybook-button--secondary {
   color: #333;
@@ -31,6 +31,7 @@
 .storybook-button--secondary.storybook-button--header{
   color: #fff;
   border-color: #fff;
+  box-shadow: none;
 }
 .storybook-button--small {
   font-size: 12px;
@@ -77,8 +78,8 @@
 }
 .storybook-button--primary.storybook-button--disabled {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #5789ff;
+  border-color: #5789ff;
 }
 .storybook-button--secondary.storybook-button--disabled {
   color: #333;
